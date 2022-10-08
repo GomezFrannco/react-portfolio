@@ -10,7 +10,7 @@ export default function Header() {
         <div className="header__content">
           <div className="content__text">
             <h1>Backend Developer</h1>
-            <span>TypeScript.</span>
+            <span id="languages" className="text__languages">TypeScript.</span>
             <p>I create solutions by writing code as efficiently as possible.</p>
             <p>We can build amazing and innovative things.</p>
             <Button btnName="Download CV"/>
