@@ -1,0 +1,20 @@
+.menu__list {
+  width: 22.0625rem;
+  display: flex;
+  justify-content: space-between;
+  .list__option {
+    a {
+      color: #C2C1C2;
+      font-weight: 400;
+      font-size: 0.875rem;
+      transition: all 200ms ease;
+    }
+    a:hover {
+      color: #7000FF;
+    }
+    a:active {
+      color: #F6F5F1;
+      font-weight: 600;
+    }
+  }
+}
