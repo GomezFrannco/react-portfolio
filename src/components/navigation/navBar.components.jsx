@@ -1,16 +1,17 @@
 import Button from "../buttons/button.components";
 import NavMenu from "./menu/menu.components";
 import "./navBar.components.scss";
+import logo from "../../assets/nav-logo.svg";
 
 const NavBar = () => {
   return (
     <nav className='navigation__bar'>
       <div className='bar__logo'>
         <a href='#' className='logo__text'>
-          Franco <span>Dev</span>
+          Franco<span>Dev.</span>
         </a>
         <a href='#' className='logo__icon'>
-          <img src='' alt="Franco's Logo" />
+          <img src={logo} alt="Franco's Logo" />
         </a>
       </div>
       <div className='bar__menu'>
