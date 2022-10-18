@@ -1,3 +1,5 @@
+import "./project.components.scss";
+
 const Project = ({project}) => {
   return (
     <>

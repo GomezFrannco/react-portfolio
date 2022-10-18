@@ -1,0 +1,25 @@
+.component__card {
+  height: 16.25rem;
+  width:17.875rem;
+  display: flex;
+  flex-direction: column;
+  .card__image {
+    height: 9.375rem;
+    width: 100%;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+  }
+  .card__text {
+    background-color: #080808;
+    border-radius: 0 0 0.9375rem 0.9375rem;
+    height: calc(100% - 9.375rem);
+    padding: 10px 18px;
+    h3 {
+      color: #F6F5F1;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+  }
+}
