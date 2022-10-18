@@ -1,3 +1,10 @@
+.subtitles::before {
+  content: "";
+  background-color:#7000FF;
+  width: 5.3125rem;
+  height: 0.3125rem;
+  margin-bottom: 1.25rem;
+}
 .subtitles {
   display: flex;
   flex-direction: column;
