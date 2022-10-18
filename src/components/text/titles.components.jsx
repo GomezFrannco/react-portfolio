@@ -1,3 +1,5 @@
+import "./subtitles.components.scss";
+
 export const Subtitles = ({text}) => {
   return (
     <div className="subtitles">
