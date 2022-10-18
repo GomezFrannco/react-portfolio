@@ -1,11 +1,11 @@
-export const TextInput = () => {
+export const TextInput = ({placeholder}) => {
   return (
-    <input type='text' placeholder='' />
+    <input type='text' placeholder={placeholder} required/>
   );
 };
-export const EmailInput = () => {
+export const EmailInput = ({placeholder}) => {
   return (
-    <input type='email' placeholder='Type your email'/>
+    <input type='email' placeholder={placeholder} required/>
   );
 };
 export const TextAreaInput = () => {
