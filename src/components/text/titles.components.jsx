@@ -1,5 +1,7 @@
 export const Subtitles = ({text}) => {
   return (
-    <h2>{text}</h2>
+    <div className="subtitles">
+      <h2>{text}</h2>
+    </div>
   );
 };
