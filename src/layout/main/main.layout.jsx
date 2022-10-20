@@ -84,6 +84,7 @@ export default function Main() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua odio.
             Morbi.
           </p>
+          <Button btnName='See more'/>
         </div>
       </section>
     </main>
