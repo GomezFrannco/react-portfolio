@@ -44,6 +44,16 @@ export default function Main() {
           <div className='content__timeline'>
             <div className='timeline__events'></div>
           </div>
+          <div className='content__text'>
+            <h3>Backend Developer</h3>
+            <p>
+              <i>Mercado Libre • 06/07/2020 - 07/01/2021</i>
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+              hic eligendi error minus asperiores voluptas
+            </p>
+          </div>
         </div>
       </section>
       <section className='main__section' id='mainSkills'>
