@@ -110,5 +110,26 @@
         }
       }
     }
+    .section__mantra {
+      width: 100%;
+      padding: 1.875rem 2.5rem;
+      border-radius: 1.25rem;
+      background-color: #080808;
+      margin-top: 3.75rem;
+      p {
+        color: #f6f5f1 !important;
+        text-align: center;
+        font-size: 1.75rem;
+        span {
+          font-weight: 600;
+        }
+      }
+      h3 {
+        color: #f6f5f1;
+        text-align: center;
+        font-size: 2.75rem;
+        margin-top: 2.8125rem;
+      }
+    }
   }
 }
