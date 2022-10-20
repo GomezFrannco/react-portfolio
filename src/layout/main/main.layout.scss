@@ -151,5 +151,11 @@
         }
       }
     }
+    .section__image {
+      width: calc(100% - 18.75rem);
+      height: 33.125rem;
+      border-radius: 0 1.25rem 1.25rem 0;
+      object-fit: cover;
+    }
   }
 }
