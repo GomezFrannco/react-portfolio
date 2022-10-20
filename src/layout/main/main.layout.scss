@@ -35,6 +35,18 @@
       background-color: #0e0e0e;
       border-radius: 1.25rem;
       padding: 1.875rem 2.5rem;
+      animation: background 5000ms ease infinite;
+      @keyframes background {
+        0% {
+          box-shadow: 0 0 3.125rem #080808;
+        }
+        50% {
+          box-shadow: 0 0 0.625rem #080808;
+        }
+        100% {
+          box-shadow: 0 0 3.125rem #080808;
+        }
+      }
       .content__title {
         display: flex;
         justify-content: space-between;
