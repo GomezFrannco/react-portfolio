@@ -1,6 +1,7 @@
 import Button from "../../components/buttons/button.components";
 import Project from "../../components/cards/projects.components";
 import { Subtitles } from "../../components/text/titles.components";
+import "./main.layout.scss";
 
 export default function Main() {
   return (
