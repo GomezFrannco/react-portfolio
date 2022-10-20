@@ -4,4 +4,8 @@
     margin: 0 10.5625rem;
     display: flex;
   }
+  #mainProjects {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
