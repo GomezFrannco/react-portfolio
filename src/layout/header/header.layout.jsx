@@ -23,7 +23,7 @@ export default function Header() {
             <Button btnName="Download CV"/>
           </div>
           <div className="content__logo">
-            <img src="" alt=""/>
+            <img src={logo} alt="logo" />
           </div>
         </div>
       </header>
