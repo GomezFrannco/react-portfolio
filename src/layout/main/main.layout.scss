@@ -132,4 +132,19 @@
       }
     }
   }
+  #mainAbout {
+    .section__text {
+      width: 18.75rem;
+      height: 33.125rem;
+      padding: 0 2.5rem;
+      background-color: #080808;
+      border-radius: 1.25rem 0 0 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        margin: 1.875rem 0;
+      }
+    }
+  }
 }
