@@ -67,6 +67,14 @@ export default function Main() {
             </p>
           </div>
         </div>
+        <div className='section__mantra'>
+          <p>
+            Ideas <span>don't come out fully formed</span>, they only become
+            clearer as you <span>work on them</span>. You just have to{" "}
+            <span>get started</span>.
+          </p>
+          <h3>Mark Zuckerberg.</h3>
+        </div>
       </section>
       <section className='main__section' id='mainAbout'>
       </section>
