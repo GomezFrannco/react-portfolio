@@ -86,6 +86,7 @@ export default function Main() {
           </p>
           <Button btnName='See more'/>
         </div>
+          <img src="https://i.ytimg.com/vi/n6JyVpU89mo/maxresdefault.jpg" alt="" className="section__image" />
       </section>
     </main>
   );
