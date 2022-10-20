@@ -21,5 +21,10 @@
         }
       }
     }
+    .section__cards {
+      display: flex;
+      justify-content: space-between;
+      margin: 4.5rem 0;
+    }
   }
 }
