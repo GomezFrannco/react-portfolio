@@ -30,6 +30,18 @@ export default function Main() {
         </div>
       </section>
       <section className='main__section' id='mainExperience'>
+        <div className='section__content'>
+          <div className='content__title'>
+            <Subtitles text='Experience' />
+            <div className='title__introduction'>
+              <p>
+                I have worked in different projects and companies as a
+                developer.
+              </p>
+              <p>You can see my professional background here.</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section className='main__section' id='mainSkills'>
       </section>
