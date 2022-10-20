@@ -77,6 +77,14 @@ export default function Main() {
         </div>
       </section>
       <section className='main__section' id='mainAbout'>
+        <div className='section__text'>
+          <Subtitles text='About me' />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua odio.
+            Morbi.
+          </p>
+        </div>
       </section>
     </main>
   );
