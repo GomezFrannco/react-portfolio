@@ -1,3 +1,5 @@
+import "./fields.components.scss";
+
 export const TextInput = ({placeholder}) => {
   return (
     <input className="input__text" type='text' placeholder={placeholder} required/>
