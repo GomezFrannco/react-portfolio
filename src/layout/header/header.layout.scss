@@ -12,6 +12,22 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      h1 {
+        margin: 0;
+        color: #f6f5f1;
+        font-size: 3rem;
+        font-weight: 800;
+        width: 28.125rem;
+        display: flex;
+        flex-direction: column;
+      }
+      div {
+        p {
+          width: 26.25rem;
+          font-size: 1.25rem;
+          line-height: 165%;
+        }
+      }
     }
   }
 }
