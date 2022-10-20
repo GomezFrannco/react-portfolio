@@ -1,6 +1,6 @@
 export const TextInput = ({placeholder}) => {
   return (
-    <input type='text' placeholder={placeholder} required/>
+    <input className="input__text" type='text' placeholder={placeholder} required/>
   );
 };
 export const EmailInput = ({placeholder}) => {
