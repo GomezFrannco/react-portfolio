@@ -41,6 +41,9 @@ export default function Main() {
               <p>You can see my professional background here.</p>
             </div>
           </div>
+          <div className='content__timeline'>
+            <div className='timeline__events'></div>
+          </div>
         </div>
       </section>
       <section className='main__section' id='mainSkills'>
