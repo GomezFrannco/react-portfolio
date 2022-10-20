@@ -7,5 +7,19 @@
   #mainProjects {
     flex-direction: column;
     justify-content: center;
+    .section__content {
+      display: flex;
+      justify-content: space-between;
+      p {
+        width: 25rem;
+        font-size: 1.125rem;
+        color: #d2d2ff;
+      }
+      .button {
+        button {
+          width: 15.9375rem;
+        }
+      }
+    }
   }
 }
