@@ -54,9 +54,19 @@ export default function Main() {
               hic eligendi error minus asperiores voluptas
             </p>
           </div>
+          <Button btnName='LinkedIn Profile' />
         </div>
       </section>
       <section className='main__section' id='mainSkills'>
+        <div className='section__slider'>
+          <div className='slider__title'>
+            <Subtitles text='Tech skills' />
+            <p>
+              These are some technologies I'm using to build
+              <span> incredible things</span>.
+            </p>
+          </div>
+        </div>
       </section>
       <section className='main__section' id='mainAbout'>
       </section>
