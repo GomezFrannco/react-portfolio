@@ -3,10 +3,40 @@
   width:17.875rem;
   display: flex;
   flex-direction: column;
+  transition: all 150ms ease;
+  position: relative;
+  border-radius: 0.9375rem;
   .card__image {
     height: 9.375rem;
     width: 100%;
     border-radius: 0.9375rem 0.9375rem 0 0;
+    transition: all 250ms ease;
+  }
+  .card__button {
+    height: 9.375rem;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 350ms ease;
+    .button {
+      button {
+        width: 12.5rem;
+        background-color: transparent !important;
+        outline: 2px solid #F6F5F1;
+      }
+      button:hover {
+        color: #0E0E0E;
+        background-color: #F6F5F1 !important;
+        outline: none;
+      }
+      button:active {
+        background-color: #C2C1C2 !important;
+        transform: scale(1.02);
+      }
+    }
   }
   .card__text {
     background-color: #080808;
@@ -22,4 +52,14 @@
       font-size: 0.875rem;
     }
   }
+}
+.component__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0.9375rem #000000;
+}
+.component__card:hover .card__image {
+  opacity: 0.08;
+}
+.component__card:hover .card__button {
+  opacity: 1;
 }
