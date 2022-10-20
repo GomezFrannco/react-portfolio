@@ -45,6 +45,14 @@
           justify-content: center;
         }
       }
+      .content__timeline {
+        color: white;
+        .timeline__events {
+          height: 0.3125rem;
+          border-radius: 6.25rem;
+          background: #080808;
+        }
+      }
     }
   }
 }
