@@ -45,6 +45,11 @@
           animation: gradient 2000ms linear infinite;
         }
       }
+      @keyframes gradient {
+        to {
+          background-position: 200% center;
+        }
+      }
       div {
         p {
           width: 26.25rem;
