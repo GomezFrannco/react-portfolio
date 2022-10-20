@@ -1,4 +1,5 @@
 import Button from "../../components/buttons/button.components";
+import Project from "../../components/cards/projects.components";
 import { Subtitles } from "../../components/text/titles.components";
 
 export default function Main() {
@@ -11,6 +12,17 @@ export default function Main() {
             I've been involved in some interesting work. Let me show you three
             amazing projects and the kind of things I can build.
           </p>
+        </div>
+        <div className='section__cards'>
+          <Project
+            project={{ title: "E-learning app", description: "asdasdasdasd" }}
+          />
+          <Project
+            project={{ title: "E-learning app", description: "asdasdasdasd" }}
+          />
+          <Project
+            project={{ title: "E-learning app", description: "asdasdasdasd" }}
+          />
         </div>
         <div className='section__content'>
           <Subtitles text='More Projects' />
