@@ -19,5 +19,22 @@
     width: 35.125rem;
     padding: 1.875rem 2.5rem;
     border-radius: 1.25rem;
+    form {
+      display: flex;
+      flex-direction: column;
+      input, textarea {
+        margin-bottom: 1.5625rem;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        input {
+          width: 14.375rem;
+        }
+      }
+      textarea {
+        height: 10rem;
+      }
+    }
   }
 }
