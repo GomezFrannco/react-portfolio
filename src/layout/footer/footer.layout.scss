@@ -4,4 +4,14 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 10.5625rem;
+  .footer__text {
+    width: 20rem;
+    p {
+      margin-top: 1.5625rem;
+      font-size: 1.125rem;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
 }
