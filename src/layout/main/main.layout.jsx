@@ -67,6 +67,8 @@ export default function Main() {
               <span> incredible things</span>.
             </p>
           </div>
+          <div className="slider__carousel">
+          </div>
         </div>
         <div className='section__mantra'>
           <p>
