@@ -110,6 +110,11 @@
           }
         }
       }
+      .slider__carousel {        
+        margin-top: 3.125rem; 
+        display: flex;
+        justify-content: space-between;
+      }
     }
     .section__mantra {
       width: 100%;
