@@ -19,6 +19,7 @@ export default function Footer() {
             </div>
             <TextInput placeholder="Topic of your message"/>
             <TextAreaInput/>
+            <button>Send message</button>
           </form>
         </div>
       </footer>
