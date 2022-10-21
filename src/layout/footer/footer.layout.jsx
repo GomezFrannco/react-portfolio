@@ -21,6 +21,9 @@ export default function Footer() {
             <TextAreaInput/>
             <button>Send message</button>
           </form>
+          <div className="form__social">
+            <p>Follow me on social media:</p>
+          </div>
         </div>
       </footer>
     </>
