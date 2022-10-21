@@ -1,0 +1,16 @@
+import { Subtitles } from "../../components/text/titles.components";
+
+export default function Footer() {
+  return (
+    <>
+      <footer className="layout__footer">
+        <div className="footer__text">
+          <Subtitles text="Let's work together"/>
+          <p>
+            I'm willing to <span>work with you</span> so if you think <span>I fit</span> your <span>projects requirements</span> feel free to <span>contact me</span> through my social networks or email.
+          </p>
+        </div>
+      </footer>
+    </>
+  )
+}
