@@ -1,6 +1,8 @@
 import Button from "../../components/buttons/button.components";
 import Project from "../../components/cards/projects.components";
+import SkillImage from "../../components/skill/skill.components";
 import { Subtitles } from "../../components/text/titles.components";
+import { skills } from "../../components/skill/skill.components";
 import "./main.layout.scss";
 
 export default function Main() {
@@ -68,6 +70,13 @@ export default function Main() {
             </p>
           </div>
           <div className="slider__carousel">
+            <SkillImage skill={skills.docker} skillName="Docker"/>
+            <SkillImage skill={skills.python} skillName="Python"/>
+            <SkillImage skill={skills.node} skillName="Node.js"/>
+            <SkillImage skill={skills.graphql} skillName="GraphQL"/>
+            <SkillImage skill={skills.postgresql} skillName="PostgreSQL"/>
+            <SkillImage skill={skills.php} skillName="PHP"/>
+            <SkillImage skill={skills.mongo} skillName="MongoDB"/>
           </div>
         </div>
         <div className='section__mantra'>
