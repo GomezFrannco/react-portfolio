@@ -71,8 +71,7 @@ export default function Main() {
         <div className='section__mantra'>
           <p>
             Ideas <span>don't come out fully formed</span>, they only become
-            clearer as you <span>work on them</span>. You just have to{" "}
-            <span>get started</span>.
+            clearer as you <span>work on them</span>. You just have to <span>get started</span>.
           </p>
           <h3>Mark Zuckerberg.</h3>
         </div>
