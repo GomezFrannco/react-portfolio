@@ -9,6 +9,7 @@ import mysql from "../../assets/skills/skill_mysql.png";
 import typescript from "../../assets/skills/skill_typescript.png";
 import javascript from "../../assets/skills/skill_javascript.png";
 import git from "../../assets/skills/skill_git.png";
+import "./skill.components.scss";
 
 export default function SkillImage({skill, skillName}) {
   return (
