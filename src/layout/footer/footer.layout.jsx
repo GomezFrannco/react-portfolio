@@ -1,5 +1,6 @@
 import { EmailInput, TextAreaInput, TextInput } from "../../components/fields/fields.components";
 import { Subtitles } from "../../components/text/titles.components";
+import "./footer.layout.scss";
 
 export default function Footer() {
   return (
