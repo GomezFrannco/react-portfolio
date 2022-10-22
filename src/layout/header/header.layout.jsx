@@ -2,8 +2,11 @@ import Button from "../../components/buttons/button.components";
 import NavBar from "../../components/navigation/navBar.components";
 import "./header.layout.scss";
 import logo from "../../assets/main-logo.svg";
+import { langs } from "./langs";
+import { useState } from "react";
 
 export default function Header() {
+  const [lang, setLang] = useState(langs[0]);
   return (
     <>
       <header className="layout__header">
@@ -12,7 +15,7 @@ export default function Header() {
           <div className="content__text">
             <h1>
               Backend Developer
-              <span id="languages"> TypeScript.</span>
+              <span id="languages">{lang}.</span>
             </h1>
             <div>
               <p>
