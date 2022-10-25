@@ -8,12 +8,3 @@ button {
   background-color: #7000FF;
   transition: all 150ms ease;
 }
-button:hover {
-  background-color: #4D00AF;
-  font-weight: 600;
-  transform: scale(1.05);
-}
-button:active {
-  background-color: #2D0066;
-  transform: scale(1.02);
-}
