@@ -1,9 +1,10 @@
 import Button from "../../components/buttons/button.components";
 import NavBar from "../../components/navigation/navBar.components";
-import "./header.layout.scss";
 import logo from "../../assets/main-logo.svg";
 import { langs } from "./langs";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import "./header.layout.scss";
 
 export default function Header() {
   const [lang, setLang] = useState(langs[0]);
@@ -22,7 +23,14 @@ export default function Header() {
       <header className="layout__header">
         <NavBar/>
         <div className="header__content">
-          <div className="content__text">
+          <motion.div className="content__text"
+            initial={{ opacity: 0, y: 150 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration:0.6,
+            }}
+          >
             <h1>
               Backend Developer
               <span id="languages">{lang}.</span>
@@ -34,10 +42,17 @@ export default function Header() {
               <p>We can build amazing and innovative things.</p>
             </div>
             <Button btnName="Download CV"/>
-          </div>
-          <div className="content__logo">
+          </motion.div>
+          <motion.div className="content__logo"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.3,
+              duration: 1.5,
+            }}
+          >
             <img src={logo} alt="logo" />
-          </div>
+          </motion.div>
         </div>
       </header>
     </>
