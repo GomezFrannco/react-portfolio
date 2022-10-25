@@ -6,6 +6,10 @@ import "../main.layout.scss";
 const initialValue = {
   opacity: 0,
 };
+const scrollViewport = {
+  once: true,
+  amount: "all"
+}
 const transitionTime = {
   duration: 0.8,
 };
@@ -18,6 +22,7 @@ export default function Skills() {
           className='slider__title'
           initial={initialValue}
           whileInView={{ y: [15, -15, 0], opacity: 1 }}
+          viewport={scrollViewport}
           transition={transitionTime}
         >
           <Subtitles text='Tech skills' />
@@ -40,6 +45,7 @@ export default function Skills() {
         className='section__mantra'
         initial={initialValue}
         whileInView={{ y: [-20, 20, 0], opacity: 1 }}
+        viewport={scrollViewport}
         transition={transitionTime}
       >
         <p>

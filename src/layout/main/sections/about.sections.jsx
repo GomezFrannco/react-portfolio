@@ -11,6 +11,10 @@ const scrollAnimation = {
   opacity: 1,
   y: 0,
 };
+const scrollViewport = {
+  once: true,
+  amount: "all"
+}
 const transitionTime = {
   duration: 0.6,
 };
@@ -23,11 +27,13 @@ export default function About() {
           text='About me'
           initial={{ y: -50, opacity: 0 }}
           whileInView={scrollAnimation}
+          viewport={scrollViewport}
           transition={transitionTime}
         />
         <motion.p
           initial={initialValue}
           whileInView={scrollAnimation}
+          viewport={scrollViewport}
           transition={transitionTime}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -38,6 +44,7 @@ export default function About() {
           btnName='See more'
           initial={initialValue}
           whileInView={scrollAnimation}
+          viewport={scrollViewport}
           transition={transitionTime}
         />
       </div>
