@@ -5,7 +5,22 @@ import "./button.components.scss";
 const Button = forwardRef(({ btnName }, ref) => {
   return (
     <a href='#' className='button' ref={ref}>
-      <button>{btnName}</button>
+      <motion.button
+        whileHover={{
+          scale:[null, 1.06],
+          background: ["#7000FF", "#4D00AF"],
+          fontWeight: 500
+        }}
+        whileTap={{
+          scale: 1,
+          background: "#2D0066"
+        }}
+        transition={{
+          duration:0.05
+        }}
+      >
+        {btnName}
+      </motion.button>
     </a>
   );
 });
