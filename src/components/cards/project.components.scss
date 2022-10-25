@@ -53,10 +53,6 @@
     }
   }
 }
-.component__card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 0.9375rem #000000;
-}
 .component__card:hover .card__image {
   opacity: 0.08;
 }
