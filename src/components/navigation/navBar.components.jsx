@@ -1,11 +1,19 @@
 import Button from "../buttons/button.components";
 import NavMenu from "./menu/menu.components";
-import "./navBar.components.scss";
 import logo from "../../assets/nav-logo.svg";
+import { motion } from "framer-motion";
+import "./navBar.components.scss";
 
 const NavBar = () => {
   return (
-    <nav className='navigation__bar'>
+    <motion.nav className='navigation__bar'
+      initial={{ y: -60, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.3,
+        duration: 0.6,
+      }}
+    >
       <div className='bar__logo'>
         <a href='#' className='logo__text'>
           Franco<span>Dev.</span>
@@ -18,7 +26,7 @@ const NavBar = () => {
         <NavMenu />
       </div>
       <Button btnName="Let's talk" />
-    </nav>
+    </motion.nav>
   );
 };
 
