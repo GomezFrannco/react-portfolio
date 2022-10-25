@@ -14,7 +14,16 @@ const cardViewport = {
 const Project = ({project, value}) => {
   return (
     <>
-      <motion.div className="component__card">
+      <motion.div className="component__card"
+        initial={{ opacity: 0 }}
+        whileInView={cardAnimation}
+        viewport={cardViewport}
+        transition={{
+          type: "spring",
+          duration: 0.6,
+          delay: value
+        }}
+      >
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KfnymzaK4rOAK8GT3uC9V1P4PYQvsg5FVw&usqp=CAU" alt="" className="card__image"/>
         <div className="card__button">
           <Button btnName="See project"/>
