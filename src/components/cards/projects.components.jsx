@@ -1,6 +1,15 @@
 import Button from "../buttons/button.components";
 import "./project.components.scss";
 
+const cardAnimation = {
+  opacity: 1,
+  y: [-50, 25, 0]
+}
+const cardViewport = {
+  once: true,
+  amount: "all"
+}
+
 const Project = ({project}) => {
   return (
     <>
