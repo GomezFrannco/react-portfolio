@@ -1,5 +1,6 @@
 import Button from "../buttons/button.components";
 import "./project.components.scss";
+import { motion } from "framer-motion";
 
 const cardAnimation = {
   opacity: 1,
@@ -10,10 +11,10 @@ const cardViewport = {
   amount: "all"
 }
 
-const Project = ({project}) => {
+const Project = ({project, value}) => {
   return (
     <>
-      <div className="component__card">
+      <motion.div className="component__card">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KfnymzaK4rOAK8GT3uC9V1P4PYQvsg5FVw&usqp=CAU" alt="" className="card__image"/>
         <div className="card__button">
           <Button btnName="See project"/>
@@ -22,8 +23,9 @@ const Project = ({project}) => {
           <h3>{project.title}</h3>
           <p>{project.description}</p>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
+
 export default Project;
