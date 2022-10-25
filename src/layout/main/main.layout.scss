@@ -4,7 +4,7 @@
     margin: 0 10.5625rem;
     display: flex;
   }
-  #mainProjects {
+  #projects {
     flex-direction: column;
     justify-content: center;
     .section__content {
@@ -28,7 +28,7 @@
       margin: 4.5rem 0;
     }
   }
-  #mainExperience {
+  #experience {
     align-items: center;
     .section__content {
       height: auto;
@@ -58,29 +58,31 @@
           justify-content: center;
         }
       }
-      .content__timeline {
-        color: white;
-        .timeline__events {
-          height: 0.3125rem;
-          border-radius: 6.25rem;
-          background: #080808;
+      .content__experience {
+        .experience__timeline {
+          color: white;
+          .timeline__events {
+            height: 0.3125rem;
+            border-radius: 6.25rem;
+            background: #080808;
+          }
         }
-      }
-      .content__text {
-        width: 42.375rem;
-        height: 11.25rem;
-        margin: auto;
-        padding: 1.875rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        h3 {
-          color: #f6f5f1;
-          font-size: 2.5rem;
-        }
-        p {
-          i {
-            color: #c2c1c2;
+        .experience__text {
+          width: 42.375rem;
+          height: 11.25rem;
+          margin: auto;
+          padding: 1.875rem 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          h3 {
+            color: #f6f5f1;
+            font-size: 2.5rem;
+          }
+          p {
+            i {
+              color: #c2c1c2;
+            }
           }
         }
       }
@@ -91,7 +93,7 @@
       }
     }
   }
-  #mainSkills {
+  #skills {
     flex-direction: column;
     justify-content: center;
     .section__slider {
@@ -138,7 +140,7 @@
       }
     }
   }
-  #mainAbout {
+  #about {
     align-items: center;
     .section__text {
       width: 18.75rem;
