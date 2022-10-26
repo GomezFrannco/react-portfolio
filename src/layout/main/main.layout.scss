@@ -59,6 +59,7 @@
         }
       }
       .content__experience {
+        position: relative;
         .experience__timeline {
           color: white;
           .timeline__events {
@@ -84,6 +85,16 @@
               color: #c2c1c2;
             }
           }
+        }
+        .text__prev, .text__next{
+          position: absolute;
+          top: 45%;
+        }
+        .text__next {
+          right: 0;
+        }
+        .text__prev svg{
+          transform: rotate(180deg);
         }
       }
       .button {
