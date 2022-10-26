@@ -48,6 +48,7 @@ export default function Projects() {
       <div className='section__content'>
         <MotionSubtitle
           text='More Projects'
+          initial={{ opacity: 0 }}
           whileInView={{
             opacity: [0, 1],
             x: [-50, 0],
