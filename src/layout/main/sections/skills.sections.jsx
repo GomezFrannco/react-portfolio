@@ -31,7 +31,12 @@ export default function Skills() {
             <span> incredible things</span>.
           </p>
         </motion.div>
-        <div className='slider__carousel'>
+        <motion.div className='slider__carousel'
+          initial={initialValue}
+          whileInView={{ x: [250, -25, 0], opacity: 1 }}
+          viewport={scrollViewport}
+          transition={transitionTime}
+        >
           <SkillImage skill={skills.docker} skillName='Docker' />
           <SkillImage skill={skills.python} skillName='Python' />
           <SkillImage skill={skills.node} skillName='Node.js' />
@@ -39,7 +44,7 @@ export default function Skills() {
           <SkillImage skill={skills.postgresql} skillName='PostgreSQL' />
           <SkillImage skill={skills.php} skillName='PHP' />
           <SkillImage skill={skills.mongo} skillName='MongoDB' />
-        </div>
+        </motion.div>
       </div>
       <motion.div
         className='section__mantra'
