@@ -2,9 +2,9 @@ import { forwardRef } from "react";
 import { motion } from "framer-motion";
 import "./button.components.scss";
 
-const Button = forwardRef(({ btnName, href }, ref) => {
+const Button = forwardRef(({ btnName, href, target }, ref) => {
   return (
-    <a href={href} className='button' ref={ref}>
+    <a href={href} className='button' target={target} ref={ref}>
       <motion.button
         whileHover={{
           scale:[null, 1.06],
