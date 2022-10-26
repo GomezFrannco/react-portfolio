@@ -7,6 +7,10 @@ const scrollAnimation = {
   x: 0,
   opacity: 1
 }
+const scrollViewport = {
+  once: true,
+  amount: "some"
+}
 const transitionTime = {
   duration: 0.6
 }
@@ -21,6 +25,7 @@ export default function Footer() {
             opacity: 0
           }}
           whileInView={scrollAnimation}
+          viewport={scrollViewport}
           transition={transitionTime}
         >
           <Subtitles text="Let's work together"/>
@@ -34,6 +39,7 @@ export default function Footer() {
             opacity: 0
           }}
           whileInView={scrollAnimation}
+          viewport={scrollViewport}
           transition={transitionTime}
         >
           <form action="">
