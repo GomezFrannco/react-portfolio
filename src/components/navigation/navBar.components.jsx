@@ -25,7 +25,7 @@ const NavBar = () => {
       <div className='bar__menu'>
         <NavMenu />
       </div>
-      <Button btnName="Let's talk" />
+      <Button btnName="Let's talk" href="#contact"/>
     </motion.nav>
   );
 };
