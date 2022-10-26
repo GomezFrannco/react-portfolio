@@ -39,7 +39,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={scrollAnimation}
           viewport={scrollViewport}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6 }}
         >
           <div className='experience__timeline'>
             <div className='timeline__events'></div>
