@@ -36,7 +36,7 @@ export default function Experience() {
         </motion.div>
         <motion.div
           className='content__experience'
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={scrollAnimation}
           viewport={scrollViewport}
           transition={{ duration: 0.6 }}
