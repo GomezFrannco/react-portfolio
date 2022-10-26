@@ -83,6 +83,8 @@ export default function Experience() {
         </motion.div>
         <MotionButton
           btnName='LinkedIn Profile'
+          href="https://www.linkedin.com/in/gomezfranco/"
+          target="_blank"
           initial={{ opacity: 0, y: 100 }}
           whileInView={scrollAnimation}
           viewport={scrollViewport}
