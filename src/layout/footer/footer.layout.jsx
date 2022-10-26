@@ -9,7 +9,7 @@ const scrollAnimation = {
 }
 const scrollViewport = {
   once: true,
-  amount: "some"
+  amount: "all"
 }
 const transitionTime = {
   duration: 0.6
@@ -18,7 +18,7 @@ const transitionTime = {
 export default function Footer() {
   return (
     <>
-      <footer className="layout__footer">
+      <footer className="layout__footer" id="contact">
         <motion.div className="footer__text"
           initial={{
             x: -150,
