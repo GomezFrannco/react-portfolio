@@ -54,6 +54,32 @@ export default function Experience() {
               hic eligendi error minus asperiores voluptas
             </p>
           </div>
+          <motion.a href="#experience" className="text__prev"
+            whileHover={{
+              scale:[null, 1.5, 1.3]
+            }}
+            transition={{
+              duration: 0.3
+            }}
+          >
+              <svg width="30" height="30" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.8545 37.8181L32.1454 26.1721L19.8545 14.1819" stroke="#C2C1C2" stroke-width="4"/>
+                  <path d="M-1.54171e-06 26C-2.86366e-07 11.6406 11.6406 2.86366e-07 26 1.5417e-06C40.3594 2.79704e-06 52 11.6406 52 26C52 40.3594 40.3594 52 26 52C11.6406 52 -2.79704e-06 40.3594 -1.54171e-06 26ZM48.2385 26C48.2385 13.718 38.282 3.7615 26 3.7615C13.718 3.7615 3.7615 13.718 3.7615 26C3.7615 38.282 13.718 48.2385 26 48.2385C38.282 48.2385 48.2385 38.282 48.2385 26Z" fill="#C2C1C2"/>
+              </svg>
+          </motion.a>
+          <motion.a href="#experience" className="text__next"
+            whileHover={{
+              scale:[null, 1.5, 1.3]
+            }}
+            transition={{
+              duration: 0.3
+            }}
+          >
+            <svg width="30" height="30" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.8545 37.8181L32.1454 26.1721L19.8545 14.1819" stroke="#C2C1C2" stroke-width="4"/>
+                <path d="M-1.54171e-06 26C-2.86366e-07 11.6406 11.6406 2.86366e-07 26 1.5417e-06C40.3594 2.79704e-06 52 11.6406 52 26C52 40.3594 40.3594 52 26 52C11.6406 52 -2.79704e-06 40.3594 -1.54171e-06 26ZM48.2385 26C48.2385 13.718 38.282 3.7615 26 3.7615C13.718 3.7615 3.7615 13.718 3.7615 26C3.7615 38.282 13.718 48.2385 26 48.2385C38.282 48.2385 48.2385 38.282 48.2385 26Z" fill="#C2C1C2"/>
+            </svg>
+          </motion.a>
         </motion.div>
         <MotionButton
           btnName='LinkedIn Profile'
