@@ -4,16 +4,16 @@ const NavMenu = () => {
   return (
     <ul className="menu__list">
       <li className="list__option">
-        <a href='#mainProjects' className="option__text">Projects</a>
+        <a href='#projects' className="option__text">Projects</a>
       </li>
       <li className="list__option">
-        <a href='#mainExperience'className="option__text">Experience</a>
+        <a href='#experience'className="option__text">Experience</a>
       </li>
       <li className="list__option">
-        <a href='#mainSkills' className="option__text">Skills</a>
+        <a href='#skills' className="option__text">Skills</a>
       </li>
       <li className="list__option">
-        <a href='#mainAbout' className="option__text">About me</a>
+        <a href='#about' className="option__text">About me</a>
       </li>
     </ul>
   )
