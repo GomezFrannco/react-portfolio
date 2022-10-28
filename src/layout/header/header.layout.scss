@@ -1,7 +1,17 @@
+@mixin m-queries( $size: 375px ) {
+  @media screen and ( max-width: $size ){
+    @content;
+  }
+}
+
 .layout__header {
   height: 100vh;
   padding-top: 1.875rem;
   margin: 0 10.5625rem;
+  @include m-queries(500px) {
+    margin: 0 10px;
+    padding-top: 15px;
+  }
   .header__content {
     height: calc(100% - 3.5056rem);
     display: flex;
@@ -12,6 +22,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      @include m-queries(500px) {
+        height: 26.25rem;
+      }
       h1::before {
         content: "";
         background-color: #7000ff;
@@ -27,6 +40,10 @@
         width: 28.125rem;
         display: flex;
         flex-direction: column;
+        @include m-queries(500px) {
+          width: 100%;
+          font-size: 3.625rem;
+        }
         span {
           background: linear-gradient(
             to left,
@@ -43,6 +60,9 @@
           font-size: 3rem;
           font-weight: 800;
           animation: gradient 2000ms linear infinite;
+          @include m-queries(500px) {
+            font-size: 3.625rem;
+          }
         }
       }
       @keyframes gradient {
@@ -55,18 +75,31 @@
           width: 26.25rem;
           font-size: 1.25rem;
           line-height: 165%;
+          @include m-queries(500px) {
+            width: 100%;
+            font-size: 18px;
+          }
         }
       }
       .button {
         width: 10rem;
+        @include m-queries(500px) {
+          width: 100%;
+        }
         button {
           width: 10rem;
+          @include m-queries(500px) {
+            width: 100%;
+          }
         }
       }
     }
     .content__logo {
       display: flex;
       align-items: center;
+      @include m-queries(500px) {
+        display: none;
+      }
       img {
         animation: movement 6s ease-in-out infinite;
       }
