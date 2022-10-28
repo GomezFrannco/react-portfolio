@@ -9,7 +9,7 @@ const scrollAnimation = {
 }
 const scrollViewport = {
   once: true,
-  amount: "all"
+  amount: "some"
 }
 const transitionTime = {
   duration: 0.6
