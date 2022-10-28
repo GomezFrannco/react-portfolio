@@ -1,3 +1,9 @@
+@mixin m-queries( $size: 375px ) {
+  @media screen and ( max-width: $size ){
+    @content;
+  }
+}
+
 .navigation__bar {
   display: flex;
   justify-content: space-between;
@@ -10,14 +16,29 @@
       span {
         color: #700FFF
       }
+      @include m-queries(500px) {
+        display: none;
+      }
     }
     .logo__icon {
       display: none;
+      @include m-queries(500px) {
+        display: block;
+      }
     }
   }
   .button {
     button {
       width: 6.5rem;
+    }
+    @include m-queries(500px) {
+      display: none;
+    }
+  }
+  .bar__mb_icon {
+    display: none;
+    @include m-queries(500px) {
+      display: block;
     }
   }
 }
