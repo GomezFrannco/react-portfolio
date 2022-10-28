@@ -1,24 +1,50 @@
+@mixin m-queries( $size: 375px ) {
+  @media screen and ( max-width: $size ){
+    @content;
+  }
+}
+
 .layout__main {
   .main__section {
     height: 100vh;
     margin: 0 10.5625rem;
     display: flex;
+    @include m-queries(500px) {
+      margin: 0 0.625rem;
+    }
   }
   #projects {
     flex-direction: column;
     justify-content: center;
+    @include m-queries(500px) {
+      height: auto;
+    }
     .section__content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include m-queries(500px) {
+        flex-direction: column;
+        align-items: start;
+      }
       p {
         width: 25rem;
         font-size: 1.125rem;
         color: #d2d2ff;
+        @include m-queries(500px) {
+          font-size: 1rem;
+          width: 100%;
+        }
       }
       .button {
+        @include m-queries(500px) {
+          width: 100%;
+        }
         button {
           width: 15.9375rem;
+          @include m-queries(500px) {
+            width: 100%;
+          }
         }
       }
     }
@@ -26,6 +52,10 @@
       display: flex;
       justify-content: space-between;
       margin: 4.5rem 0;
+      @include m-queries(500px) {
+        flex-direction: column;
+        margin: 3rem 0;
+      }
     }
   }
   #experience {
@@ -37,6 +67,11 @@
       border-radius: 1.25rem;
       padding: 1.875rem 2.5rem;
       animation: background 5000ms ease infinite;
+      @include m-queries(500px) {
+        border-radius: none;
+        animation: none;
+        padding: 0;
+      }
       @keyframes background {
         0% {
           box-shadow: 0 0 3.125rem #080808;
@@ -52,16 +87,43 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 3.4375rem;
+        @include m-queries(500px) {
+          margin-bottom: 0;
+        }
+        .subtitles::before {
+          @include m-queries(500px) {
+            display: none;
+          }
+        }
+        .subtitles {
+          @include m-queries(500px) {
+            width: 100%;
+            text-align: center;
+          }
+        }
         .title__introduction {
           display: flex;
           flex-direction: column;
           justify-content: center;
+          @include m-queries(500px) {
+            display: none;
+          }
         }
       }
       .content__experience {
         position: relative;
+        @include m-queries(500px) {
+          height: 17.5rem;
+          padding: 0 15px;
+          display: flex;
+          background-color: #080808;
+          border-radius: 0.4375rem;
+        }
         .experience__timeline {
           color: white;
+          @include m-queries(500px) {
+            display: none;
+          }
           .timeline__events {
             height: 0.3125rem;
             border-radius: 6.25rem;
@@ -76,9 +138,16 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          @include m-queries(500px) {
+            width: 100%;
+          }
           h3 {
             color: #f6f5f1;
             font-size: 2.5rem;
+            @include m-queries(500px) {
+              font-size: 28px;
+              font-weight: 600;
+            }
           }
           p {
             i {
@@ -89,6 +158,9 @@
         .text__prev, .text__next{
           position: absolute;
           top: 45%;
+          @include m-queries(500px) {
+            display: none;
+          }
         }
         .text__next {
           right: 0;
@@ -100,6 +172,9 @@
       .button {
         button {
           width: 100%;
+          @include m-queries(500px) {
+            margin-top: 1.5625rem;
+          }
         }
       }
     }
@@ -112,12 +187,24 @@
       padding: 1.875rem 2.5rem;
       border-radius: 1.25rem;
       background-color: #080808;
+      @include m-queries(500px) {
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+      }
       .slider__title {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include m-queries(500px) {
+          flex-direction: column;
+          align-items: start;
+        }
         p {
           width: 24.375rem;
+          @include m-queries(500px) {
+            width: 100%;
+          }
           span {
             font-weight: 600;
           }
@@ -127,6 +214,13 @@
         margin-top: 3.125rem; 
         display: flex;
         justify-content: space-between;
+        @include m-queries(500px) {
+          overflow-y: scroll;
+          border-radius: 0.4375rem;
+          background-color: #080808;
+          height: auto;
+          padding: 21px 15px;
+        }
       }
     }
     .section__mantra {
@@ -135,6 +229,10 @@
       border-radius: 1.25rem;
       background-color: #080808;
       margin-top: 3.75rem;
+      @include m-queries(500px) {
+        padding: 21px 15px;
+        border-radius: 7px;
+      }
       p {
         color: #f6f5f1 !important;
         text-align: center;
@@ -142,17 +240,27 @@
         span {
           font-weight: 600;
         }
+        @include m-queries(500px) {
+          font-size: 16px;
+        }
       }
       h3 {
         color: #f6f5f1;
         text-align: center;
         font-size: 2.75rem;
         margin-top: 2.8125rem;
+        @include m-queries(500px) {
+          font-size: 28px;
+          margin-top: 25px;
+        }
       }
     }
   }
   #about {
     align-items: center;
+    @include m-queries(500px) {
+      flex-direction: column-reverse;
+    }
     .section__text {
       width: 18.75rem;
       height: 33.125rem;
@@ -162,8 +270,18 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include m-queries(500px) {
+        width: 100%;
+        height: auto;
+        padding: 21px 15px;
+        border-radius: 0 0 0.4375rem 0.4375rem;
+        display: block;
+      }
       p {
         margin: 1.875rem 0;
+        @include m-queries(500px) {
+          margin: 0 0 1.5625rem 0;
+        }
       }
       .button {
         button {
@@ -176,6 +294,10 @@
       height: 33.125rem;
       border-radius: 0 1.25rem 1.25rem 0;
       object-fit: cover;
+      @include m-queries(500px) {
+        width: 100%;
+        border-radius: 0.4375rem 0.4375rem 0 0;
+      }
     }
   }
 }
