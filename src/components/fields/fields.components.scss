@@ -1,3 +1,9 @@
+@mixin m-queries( $size: 375px ) {
+  @media screen and ( max-width: $size ){
+    @content;
+  }
+}
+
 input {
   height: 3.4375rem;
 }
@@ -13,14 +19,24 @@ input, textarea {
   font-size: 0.875rem;
   background-color: #0E0E0E;
   color: #F6F5F1;
+  @include m-queries(500px) {    
+    height: 2.8125rem;
+    border-radius: 0.2188rem;
+  }
 }
 input:focus, textarea:focus {
   outline: 0.125rem solid #7000FF;
   background-color: #080808;
+  @include m-queries(500px) {    
+    outline: 0.0625rem solid #7000FF;
+  }
 }
 input::placeholder, textarea::placeholder {
   font-weight: 500;
-  color: #F6F5F1; 
+  color: #F6F5F1;
+  @include m-queries(500px) {    
+    font-weight: 400;
+  }
 }
 input:focus::placeholder, textarea:focus::placeholder {
   font-style: italic;

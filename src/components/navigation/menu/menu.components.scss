@@ -1,7 +1,16 @@
+@mixin m-queries( $size: 375px ) {
+  @media screen and ( max-width: $size ){
+    @content;
+  }
+}
+
 .menu__list {
   width: 22.0625rem;
   display: flex;
   justify-content: space-between;
+  @include m-queries(500px) {
+    display: none;
+  }
   .list__option {
     a {
       color: #C2C1C2;
