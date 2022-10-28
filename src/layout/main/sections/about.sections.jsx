@@ -36,9 +36,7 @@ export default function About() {
           viewport={scrollViewport}
           transition={transitionTime}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua odio.
-          Morbi.
+          Hello! My name is Franco. I design and develop software as best as possible writing clean code and implementing good practices. I'm passionate about technology and space.<br/>I'm currently studying Computer Programming at University and working with freelance projects for clients. Nice to meet you!
         </motion.p>
         <MotionButton
           btnName='See more'
