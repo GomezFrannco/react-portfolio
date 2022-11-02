@@ -12,6 +12,7 @@
     display: flex;
     @include m-queries(500px) {
       margin: 0 0.625rem;
+      padding-top: 0;
     }
   }
   #projects {
