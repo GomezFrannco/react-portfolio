@@ -11,13 +11,26 @@
   align-items: center;
   margin: 0 10.5625rem;
   padding-top: 6.25rem;
+  @include m-queries(1300px) {
+    margin: 0 6.25rem;
+  }
+  @include m-queries(1100px) {
+    flex-direction: column;
+    height: auto;
+  }
+  @include m-queries(950px) {
+    margin: 0 1.5625rem;
+  }
   @include m-queries(500px) {
     height: auto;
-    margin: 25px 15px;
+    margin: 1.5625rem 0.9375rem;
     flex-direction: column;
   }
   .footer__text {
     width: 20rem;
+    @include m-queries(1100px) {
+      width: 100%;
+    }
     @include m-queries(500px) {
       width: 100%;
     }
@@ -38,6 +51,11 @@
     width: 35.125rem;
     padding: 1.875rem 2.5rem;
     border-radius: 1.25rem;
+    @include m-queries(1100px) {
+      width: 100%;
+      margin-top: 0.625rem;
+      margin-bottom: 3.125rem;
+    }
     @include m-queries(500px) {
       width: 100%;
       padding: 1.3125rem 0.9375rem;
@@ -55,12 +73,12 @@
       div {
         display: flex;
         justify-content: space-between;
-        @include m-queries(500px) {
+        @include m-queries(1100px) {
           flex-direction: column;
         }
         input {
           width: 14.375rem;
-          @include m-queries(500px) {
+          @include m-queries(1100px) {
             width: 100%;
           }
         }
