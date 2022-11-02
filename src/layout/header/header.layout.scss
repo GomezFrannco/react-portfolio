@@ -7,6 +7,12 @@
 .layout__header {
   height: 100vh;
   margin: 0 10.5625rem;
+  @include m-queries(1300px) {
+    margin: 0 6.25rem;
+  }
+  @include m-queries(950px) {
+    margin: 0 1.5625rem
+  }
   @include m-queries(500px) {
     margin: 0 10px;
   }
@@ -16,7 +22,7 @@
     padding-top: 6.25rem;
     justify-content: space-between;
     align-items: center;
-    @include m-queries(500px) {
+    @include m-queries(700px) {
       padding-top: 0;
       height: calc(100% - 52px)
     }
@@ -100,11 +106,14 @@
     .content__logo {
       display: flex;
       align-items: center;
-      @include m-queries(500px) {
+      @include m-queries(768px) {
         display: none;
       }
       img {
         animation: movement 6s ease-in-out infinite;
+        @include m-queries(1024px) {
+          animation: 0; 
+        }
       }
       @keyframes movement {
         0% {
