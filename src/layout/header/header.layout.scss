@@ -9,7 +9,6 @@
   margin: 0 10.5625rem;
   @include m-queries(500px) {
     margin: 0 10px;
-    padding-top: 15px;
   }
   .header__content {
     height: 100%;
@@ -17,6 +16,10 @@
     padding-top: 6.25rem;
     justify-content: space-between;
     align-items: center;
+    @include m-queries(500px) {
+      padding-top: 0;
+      height: calc(100% - 52px)
+    }
     .content__text {
       height: 20rem;
       display: flex;
