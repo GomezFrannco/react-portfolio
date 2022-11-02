@@ -8,6 +8,7 @@
   .main__section {
     height: 100vh;
     margin: 0 10.5625rem;
+    padding-top: 6.25rem;
     display: flex;
     @include m-queries(500px) {
       margin: 0 0.625rem;

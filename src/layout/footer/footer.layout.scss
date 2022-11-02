@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 10.5625rem;
+  padding-top: 6.25rem;
   @include m-queries(500px) {
     height: auto;
     margin: 25px 15px;
