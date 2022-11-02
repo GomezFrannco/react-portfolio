@@ -8,7 +8,7 @@
   width: 22.0625rem;
   display: flex;
   justify-content: space-between;
-  @include m-queries(500px) {
+  @include m-queries(700px) {
     display: none;
   }
   .list__option {
