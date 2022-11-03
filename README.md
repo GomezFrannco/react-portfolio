@@ -1,5 +1,7 @@
 # Franco Gomez Personal Website
 
+![Preview](public/page-preview.png)
+
 Here is My Website as a Developer.
 
 https://franco-dev.vercel.app/
