@@ -53,6 +53,12 @@
           width: 100%;
           font-size: 75px;
         }
+        @include m-queries(420px) {
+          font-size: 3.625rem;
+        }
+        @include m-queries(350px) {
+          font-size: 3rem;
+        }
         span {
           background: linear-gradient(
             to left,
@@ -71,6 +77,12 @@
           animation: gradient 2000ms linear infinite;
           @include m-queries(500px) {
             font-size: 75px;
+          }
+          @include m-queries(420px) {
+            font-size: 3.625rem;
+          }
+          @include m-queries(350px) {
+            font-size: 3rem;
           }
         }
       }
