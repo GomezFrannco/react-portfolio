@@ -223,6 +223,7 @@
           width: 24.375rem;
           @include m-queries(768px) {
             width: 100%;
+            font-size: 1.125rem;
           }
           span {
             font-weight: 600;
