@@ -101,24 +101,14 @@
         margin-bottom: 3.4375rem;
         @include m-queries(500px) {
           margin-bottom: 0;
-        }
-        .subtitles::before {
-          @include m-queries(500px) {
-            display: none;
-          }
-        }
-        .subtitles {
-          @include m-queries(500px) {
-            width: 100%;
-            text-align: center;
-          }
+          flex-direction: column;
         }
         .title__introduction {
           display: flex;
           flex-direction: column;
           justify-content: center;
           @include m-queries(768px) {
-            display: none;
+            font-size: 1.125rem;
           }
         }
       }
