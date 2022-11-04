@@ -234,8 +234,8 @@
         display: flex;
         justify-content: space-between;
         @include m-queries(768px) {
-          overflow-y: scroll;
-          border-radius: 0.4375rem;
+          overflow-x: hidden;
+          border-radius: 0.625rem;
           background-color: #080808;
           height: auto;
           padding: 21px 15px;
