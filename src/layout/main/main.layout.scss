@@ -277,6 +277,7 @@
     align-items: center;
     @include m-queries(500px) {
       flex-direction: column-reverse;
+      justify-content:center;
     }
     .section__text {
       width: 18.75rem;
@@ -291,7 +292,7 @@
         width: 100%;
         height: auto;
         padding: 21px 15px;
-        border-radius: 0 0 0.4375rem 0.4375rem;
+        border-radius: 0 0 0.625rem 0.625rem;
         display: block;
       }
       p {
@@ -313,7 +314,8 @@
       object-fit: cover;
       @include m-queries(500px) {
         width: 100%;
-        border-radius: 0.4375rem 0.4375rem 0 0;
+        border-radius: 0.625rem 0.625rem 0 0;
+        height: 50vh;
       }
     }
   }
