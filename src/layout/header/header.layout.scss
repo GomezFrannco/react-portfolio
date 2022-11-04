@@ -32,7 +32,7 @@
       flex-direction: column;
       justify-content: space-between;
       @include m-queries(500px) {
-        height: 26.25rem;
+        height: auto;
       }
       h1::before {
         content: "";
@@ -51,7 +51,7 @@
         flex-direction: column;
         @include m-queries(500px) {
           width: 100%;
-          font-size: 3.625rem;
+          font-size: 75px;
         }
         span {
           background: linear-gradient(
@@ -70,7 +70,7 @@
           font-weight: 800;
           animation: gradient 2000ms linear infinite;
           @include m-queries(500px) {
-            font-size: 3.625rem;
+            font-size: 75px;
           }
         }
       }
@@ -88,6 +88,9 @@
             width: 100%;
             font-size: 18px;
           }
+        }
+        @include m-queries(500px) {
+          margin: 1.25rem 0;
         }
       }
       .button {
