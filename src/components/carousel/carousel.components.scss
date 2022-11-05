@@ -1,0 +1,17 @@
+.section__carousel {
+  max-width: calc(142px * 7);
+  overflow: hidden;
+  .carousel__skills {
+    display: flex;
+    animation: scroll 15s linear infinite;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-142px * 7))
+  }
+}
