@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Button from "../buttons/button.components";
 import NavMenu from "./menu/menu.components";
 import logo from "../../assets/nav-logo.svg";
@@ -5,6 +6,19 @@ import { motion } from "framer-motion";
 import "./navBar.components.scss";
 
 const NavBar = () => {
+  const [activeMenu, setActiveMenu] = useState(false);
+
+  const toggleMenu = (e) => {
+    const toggle = activeMenu == true ? false : true;
+    setActiveMenu(toggle);
+  }
+
+  useEffect(() => {
+    const menuButton = document.querySelector("#menuItems");
+    menuButton.classList.toggle("active");
+    menuButton.classList.toggle("hidden");
+  }, [activeMenu])
+
   return (
     <motion.nav className='navigation__bar'
       initial={{ y: -60, opacity: 0 }}
