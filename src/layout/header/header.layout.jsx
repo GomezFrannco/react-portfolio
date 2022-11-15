@@ -41,7 +41,7 @@ export default function Header() {
               </p>
               <p>We can build amazing and innovative things.</p>
             </div>
-            <Button btnName="Download CV"/>
+            <Button btnName="Download CV" href="/Franco-resume.pdf" target="_BLANK"/>
           </motion.div>
           <motion.div className="content__logo"
             initial={{ opacity: 0 }}
