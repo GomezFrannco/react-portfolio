@@ -36,11 +36,11 @@ const NavBar = () => {
           <img src={logo} alt="Franco's Logo" />
         </a>
       </div>
-      <div className='bar__menu'>
-        <NavMenu />
+      <div className='bar__menu hidden' id='menuItems'>
+        <NavMenu toggle={toggleMenu}/>
       </div>
       <Button btnName="Let's talk" href="#contact"/>
-      <div className="bar__mb_icon">
+      <div className="bar__mb_icon" onClick={toggleMenu}>
         <svg width="33" height="25" viewBox="0 0 69 52" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="69" height="8" rx="4" fill="#F6F5F1"/>
           <rect y="22" width="69" height="8" rx="4" fill="#F6F5F1"/>

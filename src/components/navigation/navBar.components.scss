@@ -24,7 +24,7 @@
   }
   @include m-queries(700px) {
     height: 52px;
-    position: static;
+    position: relative;
     padding: 0.9375rem 0 0 0;
   }
   .bar__logo{
@@ -58,6 +58,7 @@
     display: none;
     @include m-queries(700px) {
       display: block;
+      z-index: 999;
     }
   }
 }
