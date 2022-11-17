@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import "./navBar.components.scss";
 
 const NavBar = () => {
-  const [activeMenu, setActiveMenu] = useState(true);
+  const [activeMenu, setActiveMenu] = useState(false);
 
   const toggleMenu = (e) => {
     const toggle = activeMenu == true ? false : true;

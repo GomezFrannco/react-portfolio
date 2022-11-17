@@ -47,8 +47,15 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      @include m-queries(500px) {
+        flex-direction: column;
+        height:130px; 
+      }
       .button {
         width: 49%;
+        @include m-queries(500px) {
+          width: 100%;
+        }
         button {
           width: 100%;
         }
@@ -148,7 +155,8 @@
     background-color: #080808;
     border-radius: 20px;
     @include m-queries(820px) {
-      padding: 20px 15px;   
+      padding: 20px 15px;
+      margin: 60px 0;   
     }
     .subtitles {
       &::before {
