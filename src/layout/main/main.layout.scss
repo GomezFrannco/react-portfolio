@@ -210,9 +210,9 @@
       }
       p {
         margin: 1.875rem 0;
+        font-size: 18px;
         @include m-queries(500px) {
           margin: 0 0 1.5625rem 0;
-          font-size: 18px;
         }
       }
       .button {
