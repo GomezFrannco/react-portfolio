@@ -29,10 +29,10 @@ const NavBar = () => {
       }}
     >
       <div className='bar__logo'>
-        <a href='#' className='logo__text'>
+        <a href='/#' className='logo__text'>
           Franco<span>Dev.</span>
         </a>
-        <a href='#' className='logo__icon'>
+        <a href='/#' className='logo__icon'>
           <img src={logo} alt="Franco's Logo" />
         </a>
       </div>
