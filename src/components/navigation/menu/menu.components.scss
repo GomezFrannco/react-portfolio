@@ -75,13 +75,13 @@
 }
 .active {
   @include m-queries(700px) {
-    animation: menuIn 250ms ease;
-    display: inline-block !important;
+    animation: menuOut 250ms ease;
+    transform: translateY(-100%);
   }
 }
 .hidden {
   @include m-queries(700px) {
-    animation: menuOut 250ms ease;
-    transform: translateY(-100%);
+    animation: menuIn 250ms ease;
+    display: inline-block !important;
   }
 }
