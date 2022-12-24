@@ -21,7 +21,7 @@ export default function Footer() {
       <footer className="layout__footer" id="contact">
         <motion.div className="footer__text"
           initial={{
-            x: -150,
+            x: -50,
             opacity: 0
           }}
           whileInView={scrollAnimation}
@@ -35,7 +35,7 @@ export default function Footer() {
         </motion.div>
         <motion.div className="footer__form"
           initial={{
-            x: 150,
+            x: 50,
             opacity: 0
           }}
           whileInView={scrollAnimation}

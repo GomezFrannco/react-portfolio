@@ -1,4 +1,4 @@
-import SkillImage, { skills } from "../../../components/skill/skill.components";
+import SkillsCarousel from "../../../components/carousel/carousel.components";
 import { Subtitles } from "../../../components/text/titles.components";
 import { motion } from "framer-motion";
 import "../main.layout.scss";
@@ -31,20 +31,7 @@ export default function Skills() {
             <span> incredible things</span>.
           </p>
         </motion.div>
-        <motion.div className='slider__carousel'
-          initial={initialValue}
-          whileInView={{ x: [250, -25, 0], opacity: 1 }}
-          viewport={scrollViewport}
-          transition={transitionTime}
-        >
-          <SkillImage skill={skills.docker} skillName='Docker' />
-          <SkillImage skill={skills.python} skillName='Python' />
-          <SkillImage skill={skills.node} skillName='Node.js' />
-          <SkillImage skill={skills.graphql} skillName='GraphQL' />
-          <SkillImage skill={skills.postgresql} skillName='PostgreSQL' />
-          <SkillImage skill={skills.php} skillName='PHP' />
-          <SkillImage skill={skills.mongo} skillName='MongoDB' />
-        </motion.div>
+        <SkillsCarousel/>
       </div>
       <motion.div
         className='section__mantra'

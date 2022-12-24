@@ -38,13 +38,6 @@ export default function About() {
         >
           Hello! My name is Franco. I design and develop software as best as possible writing clean code and implementing good practices. I'm passionate about technology and space.<br/>I'm currently studying Computer Programming at University and working with freelance projects for clients. Nice to meet you!
         </motion.p>
-        <MotionButton
-          btnName='See more'
-          initial={initialValue}
-          whileInView={scrollAnimation}
-          viewport={scrollViewport}
-          transition={transitionTime}
-        />
       </div>
       <img
         src='https://i.ytimg.com/vi/n6JyVpU89mo/maxresdefault.jpg'

@@ -32,14 +32,7 @@
       flex-direction: column;
       justify-content: space-between;
       @include m-queries(500px) {
-        height: 26.25rem;
-      }
-      h1::before {
-        content: "";
-        background-color: #7000ff;
-        width: 85px;
-        height: 0.3125rem;
-        margin-bottom: 1.25rem;
+        height: auto;
       }
       h1 {
         margin: 0;
@@ -51,7 +44,13 @@
         flex-direction: column;
         @include m-queries(500px) {
           width: 100%;
+          font-size: 75px;
+        }
+        @include m-queries(420px) {
           font-size: 3.625rem;
+        }
+        @include m-queries(350px) {
+          font-size: 3rem;
         }
         span {
           background: linear-gradient(
@@ -70,7 +69,13 @@
           font-weight: 800;
           animation: gradient 2000ms linear infinite;
           @include m-queries(500px) {
+            font-size: 75px;
+          }
+          @include m-queries(420px) {
             font-size: 3.625rem;
+          }
+          @include m-queries(350px) {
+            font-size: 3rem;
           }
         }
       }
@@ -88,6 +93,9 @@
             width: 100%;
             font-size: 18px;
           }
+        }
+        @include m-queries(500px) {
+          margin: 1.25rem 0;
         }
       }
       .button {

@@ -58,6 +58,7 @@ export default function Projects() {
         />
         <MotionButton
           btnName='View all projects'
+          href="/projects"
           whileInView={{
             rotate: [0, 2, -2, 2, -2, 2, -2, 2, -2, 0],
           }}
