@@ -1,7 +1,7 @@
-import { EmailInput, TextAreaInput, TextInput } from "../../components/fields/fields.components";
-import { Subtitles } from "../../components/text/titles.components";
+import { EmailInput, TextAreaInput, TextInput } from "../../../../components/fields/fields.components";
+import { Subtitles } from "../../../../components/text/titles.components";
 import {motion} from "framer-motion";
-import "./footer.layout.scss";
+import "./index.scss";
 
 const scrollAnimation = {
   x: 0,

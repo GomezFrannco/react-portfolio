@@ -1,8 +1,22 @@
 @mixin m-queries( $size: 375px ) {
-  @media screen and ( max-width: $size ){
+  @media all and ( max-width: $size ){
     @content;
   }
 }
+
+// // Queries
+// $q_mobile_l: 500px;
+// $q_mobile_m: 420px;
+// $q_mobile_s: 350px;
+// // Paddings
+// $p_desktop
+// $p_mobile
+// // Margin
+// $m_desktop
+// $m_mobile
+// // Width
+// $w_desktop
+// $_mobile
 
 .layout__main {
   .main__section {
@@ -59,7 +73,7 @@
     .section__cards {
       display: flex;
       justify-content: space-between;
-      margin: 4.5rem 0;
+      margin: 2.5rem 0;
       @include m-queries(1100px) {
         margin: 3.5rem 0;
       }
@@ -161,7 +175,7 @@
       padding: 1.875rem 2.5rem;
       border-radius: 1.25rem;
       background-color: #080808;
-      margin-top: 3.75rem;
+      margin-top: 2.5rem;
       @include m-queries(768px) {
         padding: 21px 15px;
         border-radius: 0.625rem;
