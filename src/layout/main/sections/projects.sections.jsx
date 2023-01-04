@@ -1,5 +1,5 @@
 import { Subtitles, MotionSubtitle } from "../../../components/text/titles.components";
-import Project from "../../../components/cards/projects.components";
+import ProjectCard from "../../../components/ProjectCard";
 import { MotionButton } from "../../../components/Button";
 import { motion } from "framer-motion";
 import "../main.layout.scss";
@@ -32,15 +32,15 @@ export default function Projects() {
         </p>
       </motion.div>
       <div className='section__cards'>
-        <Project
+        <ProjectCard
           project={{ title: "E-learning app", description: "asdasdasdasd" }}
           value={0.2}
         />
-        <Project
+        <ProjectCard
           project={{ title: "E-learning app", description: "asdasdasdasd" }}
           value={0.3}
         />
-        <Project
+        <ProjectCard
           project={{ title: "E-learning app", description: "asdasdasdasd" }}
           value={0.4}
         />

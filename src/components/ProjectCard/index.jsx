@@ -1,5 +1,5 @@
 import Button from "../Button";
-import "./project.components.scss";
+import "./index.scss";
 import { motion } from "framer-motion";
 
 const cardAnimation = {
@@ -11,7 +11,7 @@ const cardViewport = {
   amount: "all"
 }
 
-const Project = ({project, value}) => {
+const ProjectCard = ({project, value}) => {
   return (
     <>
       <motion.div className="component__card"
@@ -37,4 +37,4 @@ const Project = ({project, value}) => {
   );
 }
 
-export default Project;
+export default ProjectCard;
