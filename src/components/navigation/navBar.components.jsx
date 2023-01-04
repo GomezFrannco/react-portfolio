@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Button from "../buttons/button.components";
+import Button from "../Button";
 import NavMenu from "./menu/menu.components";
 import logo from "../../assets/nav-logo.svg";
 import { motion } from "framer-motion";

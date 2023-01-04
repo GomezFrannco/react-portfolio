@@ -1,5 +1,5 @@
 import { Subtitles } from "../../../components/text/titles.components";
-import { MotionButton } from "../../../components/buttons/button.components";
+import { MotionButton } from "../../../components/Button";
 import { motion } from "framer-motion";
 import Experiences from "../../../components/experience/experience.components";
 import "../main.layout.scss";

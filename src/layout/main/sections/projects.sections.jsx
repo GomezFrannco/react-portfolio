@@ -1,6 +1,6 @@
 import { Subtitles, MotionSubtitle } from "../../../components/text/titles.components";
 import Project from "../../../components/cards/projects.components";
-import { MotionButton } from "../../../components/buttons/button.components";
+import { MotionButton } from "../../../components/Button";
 import { motion } from "framer-motion";
 import "../main.layout.scss";
 

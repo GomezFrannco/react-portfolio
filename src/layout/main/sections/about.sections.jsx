@@ -1,5 +1,5 @@
 import { MotionSubtitle } from "../../../components/text/titles.components";
-import { MotionButton } from "../../../components/buttons/button.components";
+import { MotionButton } from "../../../components/Button";
 import { motion } from "framer-motion";
 import "../main.layout.scss";
 

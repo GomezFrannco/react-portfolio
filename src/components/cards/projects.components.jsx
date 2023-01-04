@@ -1,4 +1,4 @@
-import Button from "../buttons/button.components";
+import Button from "../Button";
 import "./project.components.scss";
 import { motion } from "framer-motion";
 

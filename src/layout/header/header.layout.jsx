@@ -1,4 +1,4 @@
-import Button from "../../components/buttons/button.components";
+import Button from "../../components/Button";
 import NavBar from "../../components/navigation/navBar.components";
 import logo from "../../assets/main-logo.svg";
 import { langs } from "./langs";
