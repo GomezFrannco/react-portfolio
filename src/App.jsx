@@ -1,19 +1,13 @@
-import Header from "./layout/header/header.layout";
-import Main from "./layout/main/main.layout";
-import Footer from "./layout/footer/footer.layout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ProjectsPage from "./pages/projects";
+import ProjectsPage from "./pages/Projects";
+import HomePage from "./pages/Home";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
-          <>
-            <Header/>
-            <Main/>
-            <Footer/>
-          </>
+          <HomePage/>
         }/>
         <Route path="/projects" element={
           <ProjectsPage/>
