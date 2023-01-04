@@ -11,7 +11,7 @@ const cardViewport = {
   amount: "all"
 }
 
-const ProjectCard = ({project, value}) => {
+const ProjectCard = ({project}) => {
   return (
     <>
       <motion.div className="component__card"
@@ -21,10 +21,10 @@ const ProjectCard = ({project, value}) => {
         transition={{
           type: "spring",
           duration: 0.6,
-          delay: value
+          delay: 0.3
         }}
       >
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KfnymzaK4rOAK8GT3uC9V1P4PYQvsg5FVw&usqp=CAU" alt="" className="card__image"/>
+        <img src={project.thumbnail} alt={project.title} className="card__image"/>
         <div className="card__button">
           <Button btnName="See project"/>
         </div>
