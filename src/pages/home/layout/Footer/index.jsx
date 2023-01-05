@@ -1,6 +1,6 @@
 import { Input, TextAreaInput } from "../../../../components/fields/fields.components";
 import { Subtitles } from "../../../../components/text/titles.components";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import "./index.scss";
 
 const scrollAnimation = {
@@ -44,10 +44,14 @@ export default function Footer() {
         >
           <form action="">
             <div>
+              <label htmlFor="name">Name</label>
               <Input type="text" id="name" name="name" ph="Hideo Kojima"/>
+              <label htmlFor="email">Email</label>
               <Input type="email" id="email" name="email" ph="hideo@kojima.com"/>
             </div>
+            <label htmlFor="subject">Topic</label>
             <Input type="text" id="subject" name="subject" ph="API Project"/>
+            <label htmlFor="message">Your</label>
             <TextAreaInput/>
             <button>Send message</button>
           </form>
