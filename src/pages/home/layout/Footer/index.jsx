@@ -44,14 +44,14 @@ export default function Footer() {
         >
           <form action="">
             <div>
-              <label htmlFor="name">Name</label>
-              <Input type="text" id="name" name="name" ph="Hideo Kojima"/>
-              <label htmlFor="email">Email</label>
-              <Input type="email" id="email" name="email" ph="hideo@kojima.com"/>
+              <div>
+                <Input type="text" id="name" name="name" ph="Hideo Kojima"/>
+              </div>
+              <div>
+                <Input type="email" id="email" name="email" ph="hideo@kojima.com"/>
+              </div>
             </div>
-            <label htmlFor="subject">Topic</label>
             <Input type="text" id="subject" name="subject" ph="API Project"/>
-            <label htmlFor="message">Your</label>
             <TextAreaInput id="message" name="message"/>
             <button>Send message</button>
           </form>
