@@ -52,7 +52,7 @@ export default function Footer() {
             <label htmlFor="subject">Topic</label>
             <Input type="text" id="subject" name="subject" ph="API Project"/>
             <label htmlFor="message">Your</label>
-            <TextAreaInput/>
+            <TextAreaInput id="message" name="message"/>
             <button>Send message</button>
           </form>
           <div className="form__social">

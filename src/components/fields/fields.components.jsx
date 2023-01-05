@@ -1,9 +1,15 @@
 import { useState } from "react";
 import "./fields.components.scss";
 
-export const TextAreaInput = () => {
+export const TextAreaInput = ({ id, name }) => {
   return (
-    <textarea name='' id='' cols='30' rows='10' placeholder='Write a short message'></textarea>
+    <textarea
+      id={id}
+      name={name}
+      cols='30'
+      rows='10'
+      placeholder='Hi, I really like what you do and I was thinking to work with together...'
+    ></textarea>
   );
 };
 
