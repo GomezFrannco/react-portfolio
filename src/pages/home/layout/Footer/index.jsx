@@ -1,4 +1,4 @@
-import { EmailInput, TextAreaInput, TextInput } from "../../../../components/fields/fields.components";
+import { Input, TextAreaInput } from "../../../../components/fields/fields.components";
 import { Subtitles } from "../../../../components/text/titles.components";
 import {motion} from "framer-motion";
 import "./index.scss";
@@ -44,10 +44,10 @@ export default function Footer() {
         >
           <form action="">
             <div>
-              <TextInput placeholder="Type your name"/>
-              <EmailInput placeholder="Type your email"/>
+              <Input type="text" id="name" name="name" ph="Hideo Kojima"/>
+              <Input type="email" id="email" name="email" ph="hideo@kojima.com"/>
             </div>
-            <TextInput placeholder="Topic of your message"/>
+            <Input type="text" id="subject" name="subject" ph="API Project"/>
             <TextAreaInput/>
             <button>Send message</button>
           </form>
