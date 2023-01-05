@@ -2,6 +2,8 @@ import { Input, TextAreaInput } from "../../../../components/Input";
 import { Subtitles } from "../../../../components/text/titles.components";
 import { motion } from "framer-motion";
 import "./index.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const scrollAnimation = {
   x: 0,
@@ -57,6 +59,18 @@ export default function Footer() {
           </form>
           <div className="form__social">
             <p>Follow me on social media:</p>
+            <ul className="social__icons">
+              <li>
+                <a href="https://github.com/GomezFrannco">
+                  <FontAwesomeIcon icon={faGithub} size="2xl" color="#F6F5F1"/>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/gomezfranco/">
+                  <FontAwesomeIcon icon={faLinkedin} size="2xl" color="#F6F5F1" />
+                </a>
+              </li>
+            </ul>
           </div>
         </motion.div>
       </footer>

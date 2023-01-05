@@ -95,12 +95,22 @@
       }
     }
     .form__social {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5625rem;
       p {
-        margin-top: 1.5625rem;
+        display: flex;
+        align-items: center;
         font-weight: 600;
         color: #F6F5F1;
-        @include m-queries(500px) {    
-          display: none;
+      }
+      .social__icons {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        li {
+          display: flex;
+          align-items: flex-end;
         }
       }
     }
