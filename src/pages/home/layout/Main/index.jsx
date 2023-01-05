@@ -76,7 +76,7 @@ export default function Main() {
             />
           ))}
         </div>
-        <div className='section__content'>
+        {/* <div className='section__content'>
           <MotionSubtitle
             text='More Projects'
             initial={{ opacity: 0 }}
@@ -98,7 +98,7 @@ export default function Main() {
               delay: 1,
             }}
           />
-        </div>
+        </div> */}
       </section>
       <section className='main__section' id='experience'>
         <div className='section__content'>
