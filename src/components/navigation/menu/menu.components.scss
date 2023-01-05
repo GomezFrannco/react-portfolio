@@ -48,12 +48,6 @@
         width: 100%;
         padding: 30px;
       }
-      .contact {
-        display: none;
-        @include m-queries(700px) {
-          display: block;
-        }
-      }
       .option__text {
         color: #C2C1C2;
         font-weight: 400;
@@ -69,6 +63,12 @@
       .option__text:active {
         color: #F6F5F1;
         font-weight: 600;
+      }
+    }
+    .option__contact {
+      display: none;
+      @include m-queries(700px) {
+        display: block;
       }
     }
   }
