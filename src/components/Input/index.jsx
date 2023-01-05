@@ -21,6 +21,7 @@ export const Input = ({ type, id, name, ph }) => {
       type={type}
       id={id}
       name={name}
+      required
       placeholder={placeholder}
       onFocus={() => setPlaceholder("")}
       onBlur={() => setPlaceholder(ph)}
