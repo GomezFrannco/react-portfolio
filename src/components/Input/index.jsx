@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./fields.components.scss";
+import "./index.scss";
 
 export const TextAreaInput = ({ id, name }) => {
   return (

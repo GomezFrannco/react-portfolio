@@ -1,4 +1,4 @@
-import { Input, TextAreaInput } from "../../../../components/fields/fields.components";
+import { Input, TextAreaInput } from "../../../../components/Input";
 import { Subtitles } from "../../../../components/text/titles.components";
 import { motion } from "framer-motion";
 import "./index.scss";
