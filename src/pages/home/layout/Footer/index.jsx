@@ -1,7 +1,9 @@
-import { EmailInput, TextAreaInput, TextInput } from "../../components/fields/fields.components";
-import { Subtitles } from "../../components/text/titles.components";
-import {motion} from "framer-motion";
-import "./footer.layout.scss";
+import { Input, TextAreaInput } from "../../../../components/Input";
+import { Subtitles } from "../../../../components/text/titles.components";
+import { motion } from "framer-motion";
+import "./index.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const scrollAnimation = {
   x: 0,
@@ -44,15 +46,31 @@ export default function Footer() {
         >
           <form action="">
             <div>
-              <TextInput placeholder="Type your name"/>
-              <EmailInput placeholder="Type your email"/>
+              <div>
+                <Input type="text" id="name" name="name" ph="Hideo Kojima"/>
+              </div>
+              <div>
+                <Input type="email" id="email" name="email" ph="hideo@kojima.com"/>
+              </div>
             </div>
-            <TextInput placeholder="Topic of your message"/>
-            <TextAreaInput/>
+            <Input type="text" id="subject" name="subject" ph="API Project"/>
+            <TextAreaInput id="message" name="message"/>
             <button>Send message</button>
           </form>
           <div className="form__social">
             <p>Follow me on social media:</p>
+            <ul className="social__icons">
+              <li>
+                <a href="https://github.com/GomezFrannco">
+                  <FontAwesomeIcon icon={faGithub} size="2xl" color="#F6F5F1"/>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/gomezfranco/">
+                  <FontAwesomeIcon icon={faLinkedin} size="2xl" color="#F6F5F1" />
+                </a>
+              </li>
+            </ul>
           </div>
         </motion.div>
       </footer>

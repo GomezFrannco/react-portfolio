@@ -15,8 +15,8 @@ const NavMenu = ({toggle}) => {
       <li className="list__option">
         <a href='/#about' className="option__text" onClick={toggle}>About me</a>
       </li>
-      <li className="list__option">
-        <a href='/#contact' className="option__text contact" onClick={toggle}>Let's talk</a>
+      <li className="list__option option__contact">
+        <a href='/#contact' className="option__text" onClick={toggle}>Let's talk</a>
       </li>
     </ul>
   )

@@ -32,14 +32,9 @@ input:focus, textarea:focus {
   }
 }
 input::placeholder, textarea::placeholder {
-  font-weight: 500;
-  color: #F6F5F1;
+  font-weight: 300;
+  color: #C2C1C2;
   @include m-queries(500px) {    
     font-weight: 400;
   }
-}
-input:focus::placeholder, textarea:focus::placeholder {
-  font-style: italic;
-  font-weight: 300;
-  color: #C2C1C2;
 }

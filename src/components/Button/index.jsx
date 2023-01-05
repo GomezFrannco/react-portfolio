@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import { motion } from "framer-motion";
-import "./button.components.scss";
+import "./index.scss";
 
 const Button = forwardRef(({ btnName, href, target }, ref) => {
   return (

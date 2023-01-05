@@ -1,10 +1,10 @@
-import Button from "../../components/buttons/button.components";
-import NavBar from "../../components/navigation/navBar.components";
-import logo from "../../assets/main-logo.svg";
+import Button from "../../../../components/Button";
+import NavBar from "../../../../components/navigation/navBar.components";
+import logo from "../../../../assets/main-logo.svg";
 import { langs } from "./langs";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import "./header.layout.scss";
+import "./index.scss";
 
 export default function Header() {
   const [lang, setLang] = useState(langs[0]);
