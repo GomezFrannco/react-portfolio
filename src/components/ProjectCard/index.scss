@@ -96,14 +96,17 @@
     }
     h3 {
       color: #F6F5F1;
+      margin-bottom: 10px;
       font-weight: 600;
       font-size: 1.5rem;
       @include m-queries(450px) {
         font-size: 1.875rem;
       }
     }
-    p {
+    div {
+      color: #C2C1C2;
       font-size: 0.875rem;
+      font-style: italic;
       @include m-queries(450px) {
         font-size: 1.125rem;
       }

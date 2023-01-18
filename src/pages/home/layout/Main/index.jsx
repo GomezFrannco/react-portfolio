@@ -26,19 +26,25 @@ const transitionTime = {
 const projects = [
   {
     title: "E-learning app",
+    keyTechnologies: ["JavaScript", "Nodejs"],
     description: "asdasdasdasd",
+    url: "https://github.com/GomezFrannco/react-portfolio",
     thumbnail:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KfnymzaK4rOAK8GT3uC9V1P4PYQvsg5FVw&usqp=CAU",
   },
   {
     title: "E-learning app",
+    keyTechnologies: ["JavaScript", "Nodejs"],
     description: "asdasdasdasd",
+    url: "https://github.com/GomezFrannco/react-portfolio",
     thumbnail:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KfnymzaK4rOAK8GT3uC9V1P4PYQvsg5FVw&usqp=CAU",
   },
   {
     title: "E-learning app",
+    keyTechnologies: ["JavaScript", "Nodejs"],
     description: "asdasdasdasd",
+    url: "https://github.com/GomezFrannco/react-portfolio",
     thumbnail:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KfnymzaK4rOAK8GT3uC9V1P4PYQvsg5FVw&usqp=CAU",
   },
@@ -70,8 +76,9 @@ export default function Main() {
               key={index}
               project={{
                 title: p.title,
-                description: p.description,
+                technologies: p.keyTechnologies,
                 thumbnail: p.thumbnail,
+                url: p.url,
               }}
             />
           ))}
