@@ -26,11 +26,11 @@ const ProjectCard = ({project}) => {
       >
         <img src={project.thumbnail} alt={project.title} className="card__image"/>
         <div className="card__button">
-          <Button btnName="See project"/>
+          <Button btnName="See project" href={project.url} target="_BLANK"/>
         </div>
         <div className="card__text">
           <h3>{project.title}</h3>
-          <p>{project.description}</p>
+          <div>{project.technologies.join(', ')}</div>
         </div>
       </motion.div>
     </>
