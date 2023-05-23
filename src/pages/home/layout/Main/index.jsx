@@ -155,9 +155,9 @@ export default function Main() {
           transition={transitionTime}
         >
           <p>
-            Ideas <span>don't come out fully formed</span>, they only become
+            "Ideas <span>don't come out fully formed</span>, they only become
             clearer as you <span>work on them</span>. You just have to{" "}
-            <span>get started</span>.
+            <span>get started</span>"
           </p>
           <h3>Mark Zuckerberg.</h3>
         </motion.div>
