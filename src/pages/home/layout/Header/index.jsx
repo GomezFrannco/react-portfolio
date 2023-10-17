@@ -33,7 +33,7 @@ export default function Header() {
           >
             <h1>
               Backend Developer
-              <span id="languages">{lang}.</span>
+              <span id="languages">{lang}</span>
             </h1>
             <div>
               <p>

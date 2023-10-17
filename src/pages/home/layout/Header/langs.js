@@ -1,1 +1,1 @@
-export const langs = ["TypeScript", "Python", "PHP", "JavaScript", "SQL"];
+export const langs = ["Python", "JavaScript", "C++", "SQL", "MongoDB", "TypeScript"];
