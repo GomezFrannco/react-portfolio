@@ -13,17 +13,17 @@ html {
   scroll-behavior: smooth; 
 }
 ::-webkit-scrollbar {
-  width: 0.625rem;
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #080808;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #7000FF;
-  border-radius: 6.25rem;
+  background: #080808;
+  border-radius: 0;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #4D00AF;
+  background: #000000;
 }
 body {
   margin: 0;
