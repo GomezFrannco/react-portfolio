@@ -98,15 +98,17 @@
           margin: 1.25rem 0;
         }
       }
-      .button {
-        width: 10rem;
-        @include m-queries(500px) {
-          width: 100%;
-        }
-        button {
+      div{
+        .button {
           width: 10rem;
           @include m-queries(500px) {
             width: 100%;
+          }
+          button {
+            width: 10rem;
+            @include m-queries(500px) {
+              width: 100%;
+            }
           }
         }
       }
@@ -119,6 +121,7 @@
       }
       img {
         animation: movement 6s ease-in-out infinite;
+        animation-delay: 1.8s;
         @include m-queries(1024px) {
           animation: 0; 
         }

@@ -23,29 +23,44 @@ export default function Header() {
       <header className="layout__header">
         <NavBar/>
         <div className="header__content">
-          <motion.div className="content__text"
-            initial={{ opacity: 0, y: 150 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.3,
-              duration:0.6,
-            }}
-          >
-            <h1>
+          <div className="content__text">
+            <motion.h1
+              initial={{opacity: 0, x: -200}}
+              animate={{opacity: 1, x: 0}}
+              transition={{
+                delay: 0.3,
+                duration: 1.5
+              }}
+            >
               Backend Developer
               <span id="languages">{lang}</span>
-            </h1>
-            <div>
+            </motion.h1>
+            <motion.div
+              initial={{opacity: 0, x: 200}}
+              animate={{opacity: 1, x: 0}}
+              transition={{
+                delay: 0.3,
+                duration: 1.5
+              }}
+            >
               <p>
                 I create solutions by writing code as efficiently as possible.
               </p>
               <p>We can build amazing and innovative things.</p>
-            </div>
-            <Button btnName="Download CV" href="/Franco-resume.pdf" target="_BLANK"/>
-          </motion.div>
+            </motion.div>
+            <motion.div 
+              initial={{opacity: 0, y: 50}}
+              animate={{opacity: 1, y: 0}}
+              transition={{
+                delay: 0.3,
+                duration: 1.5
+              }}>
+              <Button btnName="Download CV" href="/Franco-resume.pdf" target="_BLANK"/>
+            </motion.div>
+          </div>
           <motion.div className="content__logo"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: -200}}
+            animate={{ opacity: 1, y: 0}}
             transition={{
               delay: 0.3,
               duration: 1.5,
