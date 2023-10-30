@@ -25,7 +25,7 @@ const NavBar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{
         delay: 0.3,
-        duration: 0.6,
+        duration: 1.5,
       }}
     >
       <div className='bar__logo'>
